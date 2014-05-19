@@ -1,7 +1,7 @@
 {
   "name": "mac-os-ui",
   "theme": "ui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Mac OS UI theme",
   "license": "MIT",
   "repository": {
