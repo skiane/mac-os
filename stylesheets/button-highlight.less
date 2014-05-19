@@ -1,0 +1,109 @@
+.btn{
+	border-radius: .2em;
+	font-weight: bold;
+	background-color: @background-default;
+	background-image: @mac-gradient;
+	color: @text-active;
+	text-shadow: 0 1px 0px rgba(255,255,255,.5);
+	border: 1px solid rgba(0,0,0,.5);
+	box-shadow: 0 0px 1px rgba(0,0,0,.2);
+	&:hover{
+		color: @text-default;
+		box-shadow: 0 1px 1px rgba(0,0,0,.2);
+	}
+}
+.btn-xs,.btn-group-xs .btn{
+	font-weight: normal;
+}
+[class*=highlight]{
+	padding: .2em .5em;
+}
+.btn-primary,.btn-primary:hover,.btn-primary.selected, .highlight{
+	background-color: @background-selected;
+	color: @text-active;
+}
+.btn-info,.btn-info:hover,.btn-info.selected, .highlight-info{
+	background-color: @info-background;
+	color: @info-text;
+	&:before{
+		font-family:'Octicons Regular';
+		content: "\f026";
+		font-weight: normal;
+		padding-right: .5em;
+	}
+}
+.btn-success,.btn-success:hover,.btn-success.selected, .highlight-success{
+	background-color: @success-background;
+	color: @success-text;
+	&:before{
+		font-family:'Octicons Regular';
+		content: "\f03a";
+		font-weight: normal;
+		padding-right: .5em;
+	}
+}
+.btn.selected{
+	background-image: @overlay;
+}
+.btn-warning,.btn-warning:hover,.btn-warning.selected, .highlight-warning{
+	background-color: @warning-background;
+	color: @warning-text;
+	&:before{
+		font-family:'Octicons Regular';
+		content: "\f02d";
+		font-weight: normal;
+		padding-right: .5em;
+	}
+}
+.btn-error,.btn-error:hover,.btn-error.selected, .highlight-error{
+	background-color: @error-background;
+	color: @error-text;
+	&:before{
+		font-family:'Octicons Regular';
+		content: "\f08f ";
+		font-weight: normal;
+		padding-right: .5em;
+	}
+}
+
+.text-highlight{
+	padding: 0;
+	color: @background-selected;
+}
+.text-info{
+	color: @info-text;
+}
+.text-success{
+	color: @success-background;
+}
+.text-warning{
+	color: @warning-background;
+
+}
+.text-error{
+	color: @error-background;
+}
+
+.btn-group{
+	.btn{
+		border: 1px solid rgba(0,0,0,.5);
+		box-shadow: 0 0px 1px rgba(0,0,0,.2);
+	}
+	& > .btn:first-child{
+		border-left: 1px solid rgba(0,0,0,.5);
+	}
+	& > .btn:last-child{
+		border-right: 1px solid rgba(0,0,0,.5);
+	}
+	 > .btn:hover{
+		z-index: inherit;
+	}
+	.btn.selected{
+		background-color: @background-selected;
+		background-image: @blue-gradient;
+		color: @text-active;
+		&:last-child{
+			border-right: 1px solid rgba(0,0,0,.5);
+		}
+	}
+}

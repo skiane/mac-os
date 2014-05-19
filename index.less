@@ -1,0 +1,165 @@
+@background-default: #e8e8e8;
+@sidebar-default: #e5eaef;
+@background-active: #b0b0b0;
+@background-selected: #5f9cdb;
+@background-selected-2: #5f9cdb;
+
+@success-background: #292;
+@success-text: #eee;
+@warning-background: #fc3;
+@warning-text: #333;
+@error-background: #c33;
+@error-text: #fff;
+@info-background: #eee;
+@info-text: #555;
+
+@text-default: #030303;
+@text-active: #434343;
+@text-selected: #fff;
+
+@extra-large: 140em;
+@large: 100em;
+@medium: 80em;
+@small: 60em;
+
+@active-tab-border: rgba(0,0,0,.5);
+
+@blue-gradient: linear-gradient(to bottom, #7bb8e8, #4884d0);
+
+@tab-gradient: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.2) 100%);
+@tab-gradient-active: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.3));
+@overlay: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.2));
+@button-gradient: linear-gradient(to bottom, rgba(255,255,255,.1), rgba(0,0,0,0));
+@button-highlight: rgba(255,255,255,.2);
+@button-shadow: rgba(0,0,0,.2);
+@mac-gradient: linear-gradient(to bottom, #e0e0e0 0%,#d7d7d7 3%,#b2b2b2 100%);
+@status-bar-height: 2.25em;
+
+@tool-panel-background-color: red;
+
+
+@import "stylesheets/tab-bar";
+@import "stylesheets/tree-view";
+@import "stylesheets/loading";
+@import "stylesheets/button-highlight";
+@import "stylesheets/tooltip-select";
+
+* {
+	box-sizing: border-box;
+}
+
+body{ // reset font-size from the standard 14px Atom is using to something easier to manage
+    font-size: 10px;
+}
+
+.inline-block{
+	margin-right: 1em;
+}
+
+h1,h2,h3 {
+	line-height: 1em;
+	margin-bottom: 15px
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+p {
+	line-height: 1.6;
+	margin-bottom: 15px;
+	color: @text-default;
+}
+
+
+label {
+	font-weight: normal;
+	color: @text-default;
+}
+
+.mini{
+	padding-left: 1em;
+}
+.icon{
+	display: inline-block;
+}
+
+.workspace{
+  background: @background-default;
+  color: @text-default;
+padding: 0 0 2.5em 0;
+}
+.tool-panel{
+	background: @background-default;
+	color: @text-default;
+}
+
+.status-bar{
+    height: @status-bar-height;
+		background-image: @mac-gradient;
+		border-top: 1px solid @active-tab-border;
+	position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+z-index: 100;
+	a{
+		color: @text-active;
+	}
+}
+
+.block{
+	.editor{
+		padding: 0 .75em;
+	}
+}
+
+.section{
+	.section-heading{
+		color: red;
+
+	}
+}
+.ui-site-1{
+	background: red;
+}
+.ui-site-2{
+	background: orange;
+}
+.ui-site-3{
+	background: yellow;
+}
+.ui-site-4{
+	background: green;
+}
+.ui-site-5{
+	background: blue;
+}
+
+.panes .pane .item-views .pane-item{
+	background: @background-default;
+}
+.example{
+	border-color: @background-active;
+	.example-rendered {
+		background:  @background-default;
+	}
+	.example-code{
+		border-color: @background-active;
+	}
+}
+.styleguide {
+	section {
+		.section-heading{
+			color: @text-default;
+		}
+	}
+}
