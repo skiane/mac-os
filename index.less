@@ -38,11 +38,11 @@
 @tool-panel-background-color: red;
 
 
-@import "stylesheets/tab-bar";
-@import "stylesheets/tree-view";
-@import "stylesheets/loading";
-@import "stylesheets/button-highlight";
-@import "stylesheets/tooltip-select";
+@import "styles/tab-bar";
+@import "styles/tree-view";
+@import "styles/loading";
+@import "styles/button-highlight";
+@import "styles/tooltip-select";
 
 * {
 	box-sizing: border-box;
@@ -92,12 +92,12 @@ label {
 	display: inline-block;
 }
 
-.workspace{
+.atom-workspace{
   background: @background-default;
   color: @text-default;
 padding: 0 0 2.5em 0;
 }
-.tool-panel{
+.atom-panel{
 	background: @background-default;
 	color: @text-default;
 }
@@ -117,7 +117,7 @@ z-index: 100;
 }
 
 .block{
-	.editor{
+	.atom-text-editor{
 		padding: 0 .75em;
 	}
 }
@@ -144,7 +144,7 @@ z-index: 100;
 	background: blue;
 }
 
-.panes .pane .item-views .pane-item{
+.atom-pane-container .atom-pane .item-views .pane-item{
 	background: @background-default;
 }
 .example{
