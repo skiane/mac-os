@@ -1,8 +1,6 @@
 
-
 .tab-bar{
-	font-size: 1em;
-	background-color: @background-active;
+	font-size: 0.9em;
 	background-image: @tab-gradient;
 	span{
 		color: @text-default;
@@ -19,12 +17,13 @@
 		min-width: 4em;
 		max-width: 25%;
 		min-width: 0em;
-		// border-top: 1px solid  @active-tab-border;
-		border-right: 1px solid @active-tab-border;
+		border-right: 1px solid @tab-border;
+		border-top: 1px solid @tab-border;
+		border-bottom: 1px solid @tab-border;
 		color: @text-active;
 		.title{
 			text-align: center;
-			font-weight: bold;
+			font-weight: normal;
 			padding: .3em 1.5em .1em;
 			text-shadow: 0 1px 0px rgba(255,255,255,.3);
 		}
@@ -52,7 +51,9 @@
 		border-right: none;
 	}
 	.tab.modified{
-		// background:
+		.title{
+			font-weight: bold;
+		}
 	}
 	.tab.modified:not(:hover){
 		.close-icon{
@@ -72,16 +73,12 @@
 		}
 	}
 	.tab.active{
-		background-color: @background-active;
 		background-image: @tab-gradient-active;
 		color: @text-active;
 		-webkit-flex: 1;
 		border-top: none;
-		// border-left: 1px solid @active-tab-border;
 		border-right: 1px solid @active-tab-border;
 		border-bottom: 1px solid @active-tab-border;
-		// border-bottom-right-radius: 5px;
-		// border-bottom-left-radius: 5px;
 		&.modified:not(:hover){
 			.close-icon{
 			}
