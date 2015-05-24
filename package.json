@@ -9,6 +9,6 @@
     "url": "https://github.com/ericjbasti/mac-os"
   },
   "engines": {
-    "atom": ">0.40.0"
+    "atom": ">0.200.0"
   }
 }
